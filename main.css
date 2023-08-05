@@ -1,11 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@300;600;700&display=swap');
 
+:root{
+    --slate: #d1d1d1;
+}
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #dcdcdc;
+    background-color: #f3f3f3;
 }
 
+.custom-btn {
+    color: black;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 0;
+    margin-top: 0.5rem;
+}
+
+.custom-btn:hover {
+    background-color: rgba(16, 16, 16, 0.94);
+    color: white;
+}
+
+.bg-custom {
+    background-color: transparent;
+}
+
+.nav-link {
+    color: var(--slate);
+}
+
+.nav-link:hover {
+    color: blue;
+}
+
+.nav-link.not-intersecting {
+    color: black;
+}
+
+.nav-link.not-intersecting:hover {
+    color: blue;
+}
+
+.navbar-brand {
+    padding-left: 1.5rem;
+    color: var(--slate);
+}
+
+.navbar-brand.not-intersecting {
+    padding-left: 1.5rem;
+    color: black;
+}
+
+/*-------- Scroll Reveal --------*/
 .hidden {
     opacity: 0;
     transition: all 1s;
@@ -15,12 +62,14 @@ body {
     opacity: 1;
 }
 
+/*-------- Title, Subtitile, Icons --------*/
 .section-title {
     text-align: center;
 }
 
 .section-subtitle {
     padding-bottom: 10px;
+    font-size: 15px;
 }
 
 .my-icons {
@@ -29,6 +78,7 @@ body {
     margin-bottom: 15px;
 }
 
+/*-------- Home Section --------*/
 .home-section {
     background-attachment: fixed;
     background-image: url(assets/images/helen.jpg);
@@ -47,28 +97,52 @@ body {
     margin: 0 auto; /* Center the container horizontally */
 }
 
-.about-p {
-    text-align: left;
-    padding-right: 8rem;
-}
 
-.profile-pic {
-    height: auto;
-    width: 275px;
-    justify-self: center;
-    align-self: center;
-    border-radius: 5px;
-}
-
+/*-------- About Section --------*/
 .about-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Adjust the height to your preference */
-
+    height: 100vh;
 }
+
+.profile-pic {
+    height: auto;
+    width: 250px;
+    justify-self: center;
+    align-self: center;
+    border-radius: 8px
+}
+
+.about-p {
+    text-align: left;
+}
+
 .about-content {
     margin-top: 5%;
 }
 
+.education-col1 {
+    margin-top: 2rem;
+    border-right: 1px solid black;
+}
+
+.education-col2 {
+    margin-top: 2rem;
+    border-left: 1px solid black;
+}
+
+.education-item {
+    margin-bottom: 1.5rem;
+}
+
+
+/*-------- Skills Section --------*/
+.skill-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

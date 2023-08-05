@@ -20,8 +20,28 @@
 <body>
 <!------------------------- Navbar in header ------------------------->
 <header>
-    Favicon +
-    Anchored nav bar: Home | About | Skills | Projects | Contact Me
+    <nav id="nav" class="navbar fixed-top navbar-expand-lg bg-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#home">Hansol Lee</a>
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about-me">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 </header>
 
 <main>
@@ -29,12 +49,10 @@
     <section id="home" class="home-section hidden">
         <div class="container">
             <div class="home-content">
-                <h1><strong>Hello, I'm Hansol.</strong></h1>
-                <medium class="text-muted">I'm a student at Oregon State University</medium>
+                <h1><strong>Hello, I'm <span style="color: var(--slate)">Hansol.</span></strong></h1>
+                <medium class="text-muted">I'm a student at Oregon State University and an aspiring backend developer.</medium>
                 <br>
-                <small class="text-muted">Here's a little about me:</small>
-
-                <div class="home-image"> image</div>
+                <a class="btn btn-primary custom-btn" href="#about-me" role="button">See More...</a>
             </div>
         </div>
     </section>
@@ -45,7 +63,7 @@
 
             <img class="my-icons" src="./assets/icons/person.png" alt="person icon">
             <h3 class="section-title"><strong>About Me</strong></h3>
-            <small class="text-muted section-su">My Background:</small>
+            <medium class="text-muted section-subtitle">My Background:</medium>
             <div class="about-content">
                 <div class="row">
                     <div class="col">
@@ -53,16 +71,52 @@
                     </div>
                     <div class="col">
                         <p class="about-p">
-                        Hello! I'm Hansol, a former bioengineer from Seattle with experience in biochemical research. I'm currently pursuing a second B.S. in Computer Science at Oregon State
-                        University
-                        through the post-bacc program. <br>During my time as a bioengineer, I discovered a
-                        passion for the engineering aspect of problem-solving in contrast to the biochemical aspects.
-                        This
-                        led me to pursue a software engineering role, attracted by the low cost and accessibility of
-                        tools
-                        for project development and exploration, in contrast to the high barriers in research.
-                        <br>Now, I'm excited about transitioning into the software engineering field as a backend developer.
+                            Hello! I'm Hansol, a former bioengineer from Seattle with experience in biochemical
+                            research. I'm currently pursuing a second B.S. in Computer Science at Oregon State
+                            University
+                            through the post-bacc program. <br>During my time as a bioengineer, I discovered a
+                            passion for the engineering aspect of problem-solving in contrast to the biochemical
+                            aspects.
+                            This
+                            led me to pursue a software engineering role, attracted by the low cost and accessibility of
+                            tools
+                            for project development and exploration, in contrast to the high barriers in research.
+                            Now, I'm excited about transitioning into the software engineering field as a backend
+                            developer.
                         </p>
+                    </div>
+                </div>
+
+                <img src="./assets/icons/cap.svg"
+                     alt="education picture"
+                     width="15px"
+                     height="auto">
+                <medium class="text-muted section-subtitle">Education:</medium>
+                <div class="row">
+                    <div class="col education-col1">
+                        <div class="education-item">
+                            <img width="50px" height="auto" src="./assets/icons/osu_icon.png" alt="osu logo">
+                            Oregon State University
+                            <br>
+                            <small class="text-muted">B.S. Computer Science</small>
+                        </div>
+
+                        <div class="education-item">
+                            <img width="40px" height="auto" src="./assets/icons/uw_logo.png" alt="osu logo">
+                            University of Washington
+                            <br>
+                            <small class="text-muted">B.S. Biochemistry</small>
+                        </div>
+
+                    </div>
+                    <div class="col education-col2">
+                        <div class="education-item">
+                            <small class="text-muted">Expected: June 2024</small>
+                        </div>
+                        <br>
+                        <div class="education-item">
+                            <small class="text-muted">2017-2021</small>
+                        </div>
                     </div>
                 </div>
 
@@ -76,13 +130,39 @@
         <div class="container text-center">
             <img class="my-icons" src="./assets/icons/wrench.png" alt="skills icon">
             <h3 class="section-title"><strong>Skills</strong></h3>
-            <small class="text-muted section-su">My Technical Background:</small>
+            <small class="text-muted section-subtitle">Technical Background:</small>
             <div class="about-content">
+                Backend:
 
             </div>
         </div>
     </section>
 
+    <!-------------- Projects Section -------------->
+    <section id="projects" class="projects-section hidden">
+        <div class="container text-center">
+            <img class="my-icons" src="./assets/icons/wrench.png" alt="skills icon">
+            <h3 class="section-title"><strong>My Projects</strong></h3>
+            <small class="text-muted section-subtitle">Technical Background:</small>
+            <div class="about-content">
+                Backend:
+
+            </div>
+        </div>
+    </section>
+
+    <!-------------- Contact Section -------------->
+    <section id="contact" class="contact-section hidden">
+        <div class="container text-center">
+            <img class="my-icons" src="./assets/icons/wrench.png" alt="skills icon">
+            <h3 class="section-title"><strong>Contact Me</strong></h3>
+            <small class="text-muted section-subtitle">Technical Background:</small>
+            <div class="about-content">
+                Backend:
+
+            </div>
+        </div>
+    </section>
 
 
 </main>
