@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@300;600;700&display=swap');
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #dcdcdc;
+}
+
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+}
+
+.section-title {
+    text-align: center;
+}
+
+.section-subtitle {
+    padding-bottom: 10px;
+}
+
+.my-icons {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 15px;
+}
+
+.home-section {
+    background-attachment: fixed;
+    background-image: url(assets/images/helen.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust the height to your preference */
+}
+
+.home-content {
+    text-align: left;
+    max-width: 600px; /* Adjust the max-width as per your requirement */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.about-p {
+    text-align: left;
+    padding-right: 8rem;
+}
+
+.profile-pic {
+    height: auto;
+    width: 275px;
+    justify-self: center;
+    align-self: center;
+    border-radius: 5px;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust the height to your preference */
+
+}
+.about-content {
+    margin-top: 5%;
+}
+
