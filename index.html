@@ -31,7 +31,7 @@
                     <a class="nav-link" href="#about-me">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#Skills">Skills</a>
+                    <a class="nav-link" href="#skills">Skills</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#projects">Projects</a>
@@ -50,7 +50,8 @@
         <div class="container">
             <div class="home-content">
                 <h1><strong>Hello, I'm <span style="color: var(--slate)">Hansol.</span></strong></h1>
-                <medium class="text-muted">I'm a student at Oregon State University and an aspiring backend developer.</medium>
+                <medium class="text-muted">I'm a student at Oregon State University and an aspiring backend developer.
+                </medium>
                 <br>
                 <a class="btn btn-primary custom-btn" href="#about-me" role="button">See More...</a>
             </div>
@@ -131,9 +132,38 @@
             <img class="my-icons" src="./assets/icons/wrench.png" alt="skills icon">
             <h3 class="section-title"><strong>Skills</strong></h3>
             <small class="text-muted section-subtitle">Technical Background:</small>
-            <div class="about-content">
-                Backend:
+            <div class="skills-content">
+                <div class="ss1">
+                    <h5><strong>JavaScript</strong>&emsp;<img class="my-icons" src="./assets/icons/js.png"
+                                                              alt="javascript icon"></h5>
+                    <p> - React.js</p>
+                    <p>
+                        - Node.js <br>
+                        &emsp; ⮡ &emsp; Express.js <br>
+                        &emsp; ⮡ &emsp; Sequelize.js
+                    </p>
+                    <p>
+                        - HTML/CSS
+                    </p>
+                    &emsp;
+                    <h5><strong>Python</strong>&emsp;<img class="my-icons" src="./assets/icons/python.png"
+                                                          alt="python icon"></h5>
+                    <p>
+                        -Tornado
+                    </p>
+                    <p>
+                        - Flask
+                    </p>
+                    &emsp;
+                    <h5><strong>Java</strong><img class="my-icons" src="./assets/icons/java.png" alt="java icon"></h5>
+                    <p>
+                        - JUnit
+                    </p>
+                    <p>
+                        - Spring Boot
+                    </p>
 
+                </div>
             </div>
         </div>
     </section>
@@ -141,12 +171,38 @@
     <!-------------- Projects Section -------------->
     <section id="projects" class="projects-section hidden">
         <div class="container text-center">
-            <img class="my-icons" src="./assets/icons/wrench.png" alt="skills icon">
+            <img class="my-icons" src="./assets/icons/projects.png" alt="projects icon">
             <h3 class="section-title"><strong>My Projects</strong></h3>
-            <small class="text-muted section-subtitle">Technical Background:</small>
-            <div class="about-content">
-                Backend:
-
+            <small class="text-muted section-subtitle">Past and present:</small>
+            <div class="projects-content">
+                <!-- Carousel Start -->
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./assets/images/MHC.PNG" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/images/helen.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/images/site.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <!-- Carousel End -->
             </div>
         </div>
     </section>
@@ -154,9 +210,9 @@
     <!-------------- Contact Section -------------->
     <section id="contact" class="contact-section hidden">
         <div class="container text-center">
-            <img class="my-icons" src="./assets/icons/wrench.png" alt="skills icon">
+            <img class="my-icons" src="./assets/icons/message.png" alt="envelope icon">
             <h3 class="section-title"><strong>Contact Me</strong></h3>
-            <small class="text-muted section-subtitle">Technical Background:</small>
+            <small class="text-muted section-subtitle">Get in touch!</small>
             <div class="about-content">
                 Backend:
 
@@ -167,6 +223,8 @@
 
 </main>
 
-
 </body>
+<footer>
+    Hello
+</footer>
 </html>

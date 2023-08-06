@@ -16,8 +16,10 @@ const changeNavBackground = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             document.querySelector('.navbar').style.backgroundColor = 'transparent';
+            document.querySelector('.navbar').style.boxShadow = '0px 0px 0px 0px rgba(0, 0, 0, 0.2)';
         } else {
-            document.querySelector('.navbar').style.backgroundColor = 'white';
+            document.querySelector('.navbar').style.backgroundColor = '#f3f3f3';
+            document.querySelector('.navbar').style.boxShadow = '0px 4px 6px -1px rgba(0, 0, 0, 0.2)';
         }
     });
 });
