@@ -10,43 +10,6 @@ body {
     background-color: var(--background);
 }
 
-/*!* Mobile-specific styles *!*/
-/*@media (max-width: 600px) {*/
-/*    !* Adjust the styles for mobile devices here *!*/
-/*    .navbar-brand {*/
-/*        padding-left: 0.75rem;*/
-/*    }*/
-
-/*    .home-section {*/
-/*        height: auto;*/
-/*    }*/
-
-/*    .home-content {*/
-/*        text-align: center;*/
-/*        padding: 1rem;*/
-/*    }*/
-
-/*    .about-section,*/
-/*    .skill-section {*/
-/*        height: auto;*/
-/*    }*/
-
-/*    .about-p {*/
-/*        text-align: center;*/
-/*    }*/
-
-/*    .education-col1,*/
-/*    .education-col2 {*/
-/*        border: none;*/
-/*        margin-top: 0;*/
-/*    }*/
-
-/*    .education-item {*/
-/*        margin-bottom: 1rem;*/
-/*    }*/
-/*}*/
-
-/* Rest of the non-mobile-specific styles */
 .custom-btn {
     color: black;
     background-color: transparent;
@@ -65,8 +28,13 @@ body {
     box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.2);
 }
 
+
+/* ----- Navbar related ---- */
 .nav-link {
     color: var(--slate);
+    text-align: right;
+    padding-right: 1rem;
+    padding-top: 1rem;
 }
 
 .nav-link:hover {
@@ -89,6 +57,11 @@ body {
 .navbar-brand.not-intersecting {
     padding-left: 1.5rem;
     color: black;
+}
+
+.navbar-toggler {
+    border: none;
+    color: transparent;
 }
 
 /*-------- Scroll Reveal --------*/
@@ -152,6 +125,7 @@ body {
     justify-self: center;
     align-self: center;
     border-radius: 8px;
+    margin-bottom: 2rem;
 }
 
 .about-p {
@@ -219,7 +193,25 @@ body {
     margin-top: 8%;
 }
 
+.carousel {
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    min-height: 50%;
+}
 
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: var(--slate); /* Change to your desired hover background color */
+    opacity: 0.3; /* Adjust the opacity as needed */
+}
+
+p.proj-text {
+    font-size: 14px;
+    text-align: left;
+}
 
 /*-------- Contact Section --------*/
 .contact-section{
@@ -227,5 +219,30 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 5rem;
+    padding-top: 2rem;
+}
+
+.contact-content {
+    text-align: left;
+}
+
+/*-------- Footer Section --------*/
+.foot{
+    min-height: 10rem;
+    border-top: solid 1px black;
+}
+
+.footer-button {
+    margin-top: 5rem;
+    font-size: 30px;
+}
+
+.social-icon {
+    font-size: 2rem;
+    color: gray;
+}
+
+.social-icon:hover {
+    font-size: 2rem;
+    color: black;
 }
