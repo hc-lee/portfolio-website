@@ -105,11 +105,9 @@ body {
 
 @media (max-width: 767px) {
     .home-section {
-        background-image:url('./assets/images/helen-small.jpg');
+        background-image: url('./assets/images/helen-small.jpg');
         background-repeat: no-repeat;
         background-position: center;
-        background-attachment: fixed;
-        background-size: cover;
     }
 }
 
