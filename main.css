@@ -103,6 +103,20 @@ body {
     min-height: 100vh;
 }
 
+@media (max-width: 767px) { /* Adjust the breakpoint as needed */
+    .home-section {
+        background-attachment: fixed;
+        background-image: url(assets/images/helen-small.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+}
+
 .home-content {
     text-align: left;
     max-width: 600px;
