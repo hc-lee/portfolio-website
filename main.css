@@ -103,14 +103,6 @@ body {
     min-height: 100vh;
 }
 
-@media (max-width: 767px) {
-    .home-section {
-        background-image: url('./assets/images/helen-small (1).jpg');
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-}
-
 .home-content {
     text-align: left;
     max-width: 600px;
