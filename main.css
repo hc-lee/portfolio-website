@@ -109,7 +109,13 @@ body {
         background-size: cover;
         background-position: center;
         overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
     }
+}
 
 .home-content {
     text-align: left;
