@@ -107,13 +107,9 @@ body {
     .home-section {
         background-image:url('./assets/images/helen-small.jpg');
         background-repeat: no-repeat;
-        background-position: 0px 0px;
+        background-position: center;
         background-attachment: fixed;
-        background-color: #fff;
-        -webkit-background-size: calc(100vw) calc(100vh);
-        -moz-background-size: calc(100vw) calc(100vh);
-        -o-background-size: calc(100vw) calc(100vh);
-        background-size: calc(100vw) calc(100vh);
+        background-size: cover;
     }
 }
 
