@@ -93,7 +93,7 @@ body {
 /*-------- Home Section --------*/
 .home-section {
     background-attachment: fixed;
-    background-image: url('./assets/images/helen.jpg');
+    background-image: url('assets/images/helen.jpg');
     background-position: center;
     background-size: cover;
     display: flex;
